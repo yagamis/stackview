@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-ml-aRI">
+                                <rect key="frame" x="174" y="40" width="252" height="81"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优衣库" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIA-9f-tFo">
+                                        <rect key="frame" x="51" y="0.0" width="150" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全国300家门店内体验试穿的艺术" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2m-2P-vFG">
+                                        <rect key="frame" x="0.0" y="60" width="252" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AYn-zm-JC5">
+                                <rect key="frame" x="0.0" y="131" width="600" height="338"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t-shirt-1" translatesAutoresizingMaskIntoConstraints="NO" id="FwR-Iu-Vzc">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="338"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t-shirt-2" translatesAutoresizingMaskIntoConstraints="NO" id="VhN-CF-oLX">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="338"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t-shirt-3" translatesAutoresizingMaskIntoConstraints="NO" id="cX6-8g-OZY">
+                                        <rect key="frame" x="400" y="0.0" width="200" height="338"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AYn-zm-JC5" secondAttribute="height" multiplier="300:169" id="nDS-1u-LrO"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Z0-Tx-f0o">
+                                <rect key="frame" x="248" y="510" width="105" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iex-mm-ttd">
+                                        <rect key="frame" x="23" y="0.0" width="60" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="注册账号"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-gr-coG">
+                                        <rect key="frame" x="0.0" y="30" width="105" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="使用第三方登陆"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AYn-zm-JC5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ELL-lW-brb"/>
+                            <constraint firstItem="GnS-ml-aRI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Na6-ln-Lys"/>
+                            <constraint firstItem="3Z0-Tx-f0o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULp-w0-77U"/>
+                            <constraint firstItem="AYn-zm-JC5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cxJ-ja-3Is"/>
+                            <constraint firstItem="GnS-ml-aRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gGY-86-yRg"/>
+                            <constraint firstItem="AYn-zm-JC5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iXM-T1-ctE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Z0-Tx-f0o" secondAttribute="bottom" constant="30" id="lO3-CP-Y28"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="t-shirt-1" width="180" height="338"/>
+        <image name="t-shirt-2" width="180" height="338"/>
+        <image name="t-shirt-3" width="180" height="338"/>
+    </resources>
+</document>
